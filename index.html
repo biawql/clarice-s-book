@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarice's Books</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">+12</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">+14</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">+16</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">+18</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link"></a>
+        </li>
+      </ul>
+      <img src="img/logo pequena da Clarice Lispector.png" width="160" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Clarice's</b>Books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Biografia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Sobre o site</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Livros</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Mais opções</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link"></a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.png" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Busque os livros que te interesse!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Leituras que te prendem do início ao fim</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/a hora da estrela.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/a paixao segundo gh.jpeg"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/agua viva.jpeg" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/legiao estrangeira.jpeg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/perto do coracao selvagem.jpeg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/laços de familia.jpeg" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Box de livros da Clarice Lispector</h2>
+            <p class="descrição__texto">Este box é uma homenagem à obra da renomada escritora brasileira Clarice Lispector, famosa por sua prosa introspectiva e inovadora. Composto por 18 volumes, cada um apresenta uma capa elegante, muitas vezes ilustrada com designs que evocam a sensibilidade e a profundidade de sua escrita. Os livros incluem títulos icônicos como A Hora da Estrela, Perto do Coração Selvagem, e A Paixão segundo G.H., entre outros, proporcionando uma imersão no universo psicológico e emocional de Lispector.
+            </p>
+          </div>
+          <img src="img/clarice.jpeg" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Sugestões de leitura</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/agua viva.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/perto do coracao selvagem.jpeg" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/laços de familia.jpeg" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="img/a paixao segundo gh.jpeg" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/a hora da estrela.jpeg" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/legiao estrangeira.jpeg" alt="livro sobre acessibilidade"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.png" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Conheça a autora!</h3>
+            <h2 class="descrição__titulo-livro">A maior escritora do modernismo</h2>
+            <p class="descrição__texto">Clarice Lispector (1920-1977) foi uma das mais importantes escritoras brasileiras do século XX. Nascida na Ucrânia, sua família emigrou para o Brasil quando ela ainda era criança, estabelecendo-se em Pernambuco. Formou-se em Direito no Rio de Janeiro, mas logo enveredou pela literatura. Seu romance de estreia, "Perto do Coração Selvagem" (1943), revolucionou a literatura brasileira por sua linguagem introspectiva e experimental. Ao longo de sua carreira, escreveu romances, contos e crônicas, sendo conhecida por explorar temas existenciais, o feminino e as complexidades da mente humana.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/clarice 2.png" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Clarice Lispector</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Modernismo</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Romance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Resenhas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Opiniões</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Autores semelhantes</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Biografia</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Cadastre e receba todos os avisos importantes do nosso site.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Clarice 📖⭐</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo"></li>
+      <li class="lista-rodapé__item">
+        <img src="img/galera logo.png"  width="60" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Galera</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo companhia.png" width="60" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">Companhia das letras</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/logo rocco.png" width="60" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Rocco</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Editoras</b></h1>
+
+      
+      
+      <li class="lista-rodapé__item">
+        <img src="img/panini.png" width="60" alt="Logo do Layers ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Panini</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/alt.png" width="60" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">Alt</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/seguinte.png" width="60" alt="Logo da Music Dot" />
+        <a href="#" class="lista-rodapé__link">Seguinte</a>
+      </li>
+      
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo"></li>
+      <li class="lista-rodapé__item">
+        <img src="img/jangada.png" width="60" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Jangada</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/intrinseca.png" width="100" alt="Logo da AluraParaEmpresas" />
+        <a href="#" class="lista-rodapé__link">intrinseca</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/arqueiros.png" width="60" alt="Logo do Scuba Dev" />
+        <a href="#" class="lista-rodapé__link">Arqueiro</a>
+      </li>
+      
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
